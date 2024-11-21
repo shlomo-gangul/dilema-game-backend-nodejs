@@ -1,6 +1,8 @@
-require("dotenv").config();
-const express = require("express");
-const { ethers } = require("ethers");
+import dotenv from "dotenv";
+import express from "express";
+import { ethers } from "ethers";
+
+dotenv.config();
 const app = express();
 const port = 3000;
 
