@@ -7,7 +7,6 @@ dotenv.config();
 const app = express();
 const port = 3000;
 
-// Middleware to parse JSON requests
 app.use(express.json());
 app.use("/game-factory", routerGF);
 app.use("/dillema-game", routerDG);

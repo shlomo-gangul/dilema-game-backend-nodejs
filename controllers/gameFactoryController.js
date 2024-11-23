@@ -14,7 +14,7 @@ const gameFactoryAddress = process.env.CONTRACT_GAME_FACTORY_ADDRESS;
 const provider = new ethers.JsonRpcProvider(infuraProjectId);
 const wallet = new ethers.Wallet(privateKey, provider);
 
-// ABI of the DillemaGame contract
+// ABI of the GameFactory contract
 
 // Create a contract instance
 const contract = new ethers.Contract(
