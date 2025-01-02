@@ -1,16 +1,12 @@
 import express from "express";
 import {
-  getGameState,
-  postJoinGmae,
-  postCommitChoice,
-  postRevealChoce,
+  getGameTokenBalance,
+  mintedGameToken,
 } from "../controllers/dillemaGameController.js";
 
 const routerDG = express.Router();
 
-routerDG.get("/game-state", getGameState);
-routerDG.post("/join-game", postJoinGmae);
-routerDG.post("/commit-choice", postCommitChoice);
-routerDG.post("/reveal-choice", postRevealChoce);
+routerDG.get("/game-token-balance", getGameTokenBalance);
+routerDG.get("/minted-game-token", mintedGameToken);
 
 export { routerDG };
