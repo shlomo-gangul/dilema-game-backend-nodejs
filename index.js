@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import express from "express";
-import { routerDG } from "./routes/dillemaGameRoutes.js";
+import { routerGT } from "./routes/gameTokenRoutes.js";
 import { routerGF } from "./routes/gameFactoryRoutes.js";
 
 dotenv.config();
@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/game-factory", routerGF);
-app.use("/dillema-game", routerDG);
+app.use("/game-token", routerGT);
 
 // Start the server
 app.listen(port, () => {
